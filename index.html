@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mente em Equilíbrio | Saúde Emocional</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+
+<i class="fa-solid fa-heart"></i>
+
+<h2>Mente em Equilíbrio</h2>
+
+</div>
+
+
+
+<nav>
+
+<a href="index.html">Início</a>
+
+<a href="escuta.html">Portal de Escuta</a>
+
+<a href="quiz.html">Quiz</a>
+
+<a href="referencias.html">Referências</a>
+
+</nav>
+
+
+
+<div class="botoes">
+
+<button id="aumentar">A+</button>
+
+<button id="escuro">🌙</button>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<section class="inicio">
+
+
+
+<div class="texto">
+
+
+<h1>
+
+Saúde Emocional
+
+</h1>
+
+
+<h2>
+
+Sua mente também merece cuidado 💙
+
+</h2>
+
+
+
+<p>
+
+Bem-vindo ao Mente em Equilíbrio.
+
+Este portal foi criado para ajudar estudantes a compreenderem seus sentimentos,
+encontrarem apoio e aprenderem formas de cuidar da saúde emocional.
+
+</p>
+
+
+
+<a href="escuta.html">
+
+Quero conversar
+
+</a>
+
+
+</div>
+
+
+
+
+<div class="imagem">
+
+
+<img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900"
+alt="Estudantes felizes conversando">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section class="informacoes">
+
+
+<h2>
+
+Por que cuidar da saúde emocional?
+
+</h2>
+
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>
+
+Entenda seus sentimentos
+
+</h3>
+
+
+<p>
+
+Aprenda a reconhecer emoções e lidar melhor com elas.
+
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-comments"></i>
+
+
+<h3>
+
+Fale sobre isso
+
+</h3>
+
+
+<p>
+
+Conversar com alguém de confiança pode ajudar muito.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-heart"></i>
+
+
+<h3>
+
+Cuide de você
+
+</h3>
+
+
+<p>
+
+Pequenas atitudes podem melhorar seu bem-estar.
+
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="dicas">
+
+
+<h2>
+
+Dicas para cuidar da mente
+
+</h2>
+
+
+
+<div class="lista">
+
+
+<p>😴 Durma bem</p>
+
+<p>🎵 Faça atividades que gosta</p>
+
+<p>🚶 Pratique exercícios</p>
+
+<p>💬 Converse com alguém</p>
+
+<p>📱 Use tecnologia com equilíbrio</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+Projeto Escolar - Portal de Saúde Emocional © 2026
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<button id="topo">
+
+⬆
+
+</button>
+
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>
+/* =====================
+   CONFIGURAÇÕES GERAIS
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:#f5f7ff;
+    color:#333;
+    transition:0.4s;
+
+}
+
+
+/* =====================
+        CABEÇALHO
+===================== */
+
+
+header{
+
+    background:white;
+
+    width:100%;
+
+    padding:20px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+}
+
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+
+.logo i{
+
+    color:#ff5c8a;
+
+    font-size:35px;
+
+}
+
+
+
+.logo h2{
+
+    color:#6c63ff;
+
+}
+
+
+
+
+nav a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:600;
+
+    margin:0 10px;
+
+}
+
+
+
+nav a:hover{
+
+    color:#6c63ff;
+
+}
+
+
+
+button{
+
+    border:none;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+#aumentar{
+
+    background:#16a085;
+
+    color:white;
+
+}
+
+
+
+#escuro{
+
+    background:#6c63ff;
+
+    color:white;
+
+}
+
+
+
+
+
+/* =====================
+        INÍCIO
+===================== */
+
+
+.inicio{
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-around;
+
+    padding:60px 8%;
+
+    gap:40px;
+
+}
+
+
+
+.texto{
+
+    width:50%;
+
+}
+
+
+
+.texto h1{
+
+    font-size:55px;
+
+    color:#6c63ff;
+
+}
+
+
+
+.texto h2{
+
+    color:#ff5c8a;
+
+    margin:15px 0;
+
+}<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Referências | Mente em Equilíbrio</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<header>
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-heart"></i>
+
+
+<h2>Mente em Equilíbrio</h2>
+
+
+</div>
+
+
+
+
+
+<nav>
+
+
+<a href="index.html">Início</a>
+
+<a href="escuta.html">Escuta</a>
+
+<a href="quiz.html">Quiz</a>
+
+<a href="referencias.html">Referências</a>
+
+
+</nav>
+
+
+
+
+
+<div>
+
+
+<button id="aumentar">A+</button>
+
+
+<button id="escuro">🌙</button>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+<main class="pagina">
+
+
+
+<h1>
+
+📚 Referências
+
+</h1>
+
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+Fontes utilizadas na pesquisa:
+
+</h2>
+
+
+
+<p>
+
+As informações deste portal foram baseadas em fontes confiáveis
+sobre saúde emocional e bem-estar.
+
+</p>
+
+
+
+<br>
+
+
+
+
+<ul>
+
+
+<li>
+
+Organização Mundial da Saúde (OMS) -
+Saúde mental e bem-estar.
+
+</li>
+
+
+
+<br>
+
+
+<li>
+
+Ministério da Saúde -
+Informações sobre cuidados com a saúde mental.
+
+</li>
+
+
+
+
+<br>
+
+
+<li>
+
+UNICEF -
+Materiais sobre adolescentes, emoções e proteção.
+
+</li>
+
+
+
+
+<br>
+
+
+<li>
+
+Cartilhas educativas sobre prevenção ao bullying,
+acolhimento e convivência escolar.
+
+</li>
+
+
+
+<br>
+
+
+
+<li>
+
+Artigos científicos sobre emoções, ansiedade,
+estresse e qualidade de vida.
+
+</li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+Mensagem final 💙
+
+</h2>
+
+
+<p>
+
+Cuidar da saúde emocional é um processo diário.
+
+Buscar ajuda, conversar e demonstrar sentimentos são atitudes importantes
+para uma vida mais saudável.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+Projeto Escolar - Portal de Saúde Emocional © 2026
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<button id="topo">
+
+⬆
+
+</button>
+
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>
+
+
+
+.texto p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.texto a{
+
+    background:#6c63ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+
+.texto a:hover{
+
+    background:#5148e8;
+
+}
+
+
+
+.imagem img{
+
+    width:450px;
+
+    border-radius:30px;
+
+    animation:flutuar 4s infinite;
+
+}
+
+
+
+@keyframes flutuar{
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+
+
+
+
+/* =====================
+        CARDS
+===================== */
+
+
+.informacoes{
+
+    padding:60px 8%;
+
+}
+
+
+
+.informacoes h2{
+
+    text-align:center;
+
+    color:#6c63ff;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.card i{
+
+    font-size:45px;
+
+    color:#ff5c8a;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+/* =====================
+        DICAS
+===================== */
+
+
+.dicas{
+
+    padding:50px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.dicas h2{
+
+    color:#6c63ff;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.lista{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.lista p{
+
+    background:#6c63ff;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+
+/* =====================
+        RODAPÉ
+===================== */
+
+
+footer{
+
+    background:#222;
+
+    color:white;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* =====================
+      VOLTAR AO TOPO
+===================== */
+
+
+#topo{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#ff5c8a;
+
+    color:white;
+
+    font-size:20px;
+
+    display:none;
+
+}
+
+
+
+
+
+/* =====================
+       MODO ESCURO
+===================== */
+
+
+.dark{
+
+    background:#181818;
+
+    color:white;
+
+}
+
+
+
+.dark header{
+
+    background:#242424;
+
+}
+
+
+
+.dark nav a{
+
+    color:white;
+
+}
+
+
+
+.dark .card{
+
+    background:#292929;
+
+    color:white;
+
+}
+
+
+
+
+
+/* =====================
+      FONTE MAIOR
+===================== */
+
+
+.grande{
+
+    font-size:120%;
+
+}
+
+
+
+
+
+/* =====================
+      CELULAR
+===================== */
+
+
+@media(max-width:800px){
+
+
+header{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+.inicio{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+
+.texto{
+
+    width:100%;
+
+}
+
+
+.texto h1{
+
+    font-size:40px;
+
+}
+
+
+.imagem img{
+
+    width:90%;
+
+}
+
+
+nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+
+}
+// ==========================
+// MODO ESCURO
+// ==========================
+
+
+const botaoEscuro = document.getElementById("escuro");
+
+
+botaoEscuro.addEventListener("click", function(){
+
+
+    document.body.classList.toggle("dark");
+
+
+});
+
+
+
+
+
+// ==========================
+// AUMENTAR FONTE
+// ==========================
+
+
+const botaoFonte = document.getElementById("aumentar");
+
+
+botaoFonte.addEventListener("click", function(){
+
+
+    document.body.classList.toggle("grande");
+
+
+});
+
+
+
+
+
+
+// ==========================
+// BOTÃO VOLTAR AO TOPO
+// ==========================
+
+
+const botaoTopo = document.getElementById("topo");
+
+
+
+window.addEventListener("scroll", function(){
+
+
+    if(window.scrollY > 300){
+
+
+        botaoTopo.style.display="block";
+
+
+    }
+
+    else{
+
+
+        botaoTopo.style.display="none";
+
+
+    }
+
+
+});
+
+
+
+
+
+botaoTopo.addEventListener("click", function(){
+
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+
+});
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Portal de Escuta | Mente em Equilíbrio</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+
+<i class="fa-solid fa-heart"></i>
+
+<h2>Mente em Equilíbrio</h2>
+
+</div>
+
+
+
+
+<nav>
+
+<a href="index.html">Início</a>
+
+<a href="escuta.html">Escuta</a>
+
+<a href="quiz.html">Quiz</a>
+
+<a href="referencias.html">Referências</a>
+
+</nav>
+
+
+
+
+<div>
+
+<button id="aumentar">A+</button>
+
+<button id="escuro">🌙</button>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<main class="pagina">
+
+
+<h1>
+
+💙 Portal de Escuta
+
+</h1>
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+Como você está se sentindo hoje?
+
+</h2>
+
+
+
+<p>
+
+Este espaço é uma simulação de acolhimento.
+Nenhuma mensagem será armazenada.
+
+</p>
+
+
+
+<form id="formulario">
+
+
+
+<select id="sentimento">
+
+
+<option>😊 Feliz</option>
+
+<option>😐 Cansado(a)</option>
+
+<option>😔 Triste</option>
+
+<option>😰 Ansioso(a)</option>
+
+<option>😟 Preocupado(a)</option>
+
+
+</select>
+
+
+
+
+
+<textarea id="mensagem"
+
+placeholder="Escreva aqui como você está se sentindo...">
+
+</textarea>
+
+
+
+
+<button type="submit">
+
+Enviar
+
+</button>
+
+
+
+</form>
+
+
+
+<div id="resposta"></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+❤️ Mensagens importantes
+
+</h2>
+
+
+
+<p>
+
+✨ Seus sentimentos são importantes.
+
+</p>
+
+
+<p>
+
+✨ Você merece ser ouvido.
+
+</p>
+
+
+<p>
+
+✨ Pedir ajuda é um sinal de coragem.
+
+</p>
+
+
+<p>
+
+✨ Você não precisa enfrentar tudo sozinho.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+🤝 Procure ajuda quando precisar
+
+</h2>
+
+
+<p>
+
+Converse com:
+
+</p>
+
+
+<ul>
+
+<li>Um professor de confiança;</li>
+
+<li>Família;</li>
+
+<li>Coordenação da escola;</li>
+
+<li>Um adulto de confiança;</li>
+
+<li>Profissionais de saúde.</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+Projeto Escolar - Portal de Saúde Emocional © 2026
+
+</p>
+
+
+</footer>
+
+
+
+
+
+<button id="topo">
+
+⬆
+
+</button>
+
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/escuta.js"></script>
+
+
+
+</body>
+
+</html>
+// Portal de Escuta
+
+
+const formulario = document.getElementById("formulario");
+
+
+const resposta = document.getElementById("resposta");
+
+
+
+formulario.addEventListener("submit", function(event){
+
+
+event.preventDefault();
+
+
+
+const sentimento = document.getElementById("sentimento").value;
+
+
+
+resposta.innerHTML = `
+
+
+<div class="caixa">
+
+
+<h2>
+
+Obrigado por compartilhar 💙
+
+</h2>
+
+
+<p>
+
+Você informou que está se sentindo:
+
+<strong>${sentimento}</strong>
+
+</p>
+
+
+<p>
+
+Lembre-se:
+
+Você merece cuidado e apoio.
+
+Converse com alguém de confiança quando precisar.
+
+</p>
+
+
+<p>
+
+🌱 Um dia difícil não define toda a sua história.
+
+</p>
+
+
+</div>
+
+
+`;
+
+
+
+formulario.reset();
+
+
+
+});
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Quiz | Mente em Equilíbrio</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+
+<div class="logo">
+
+<i class="fa-solid fa-heart"></i>
+
+<h2>Mente em Equilíbrio</h2>
+
+</div>
+
+
+
+
+<nav>
+
+<a href="index.html">Início</a>
+
+<a href="escuta.html">Escuta</a>
+
+<a href="quiz.html">Quiz</a>
+
+<a href="referencias.html">Referências</a>
+
+</nav>
+
+
+
+
+<div>
+
+<button id="aumentar">A+</button>
+
+<button id="escuro">🌙</button>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<main class="pagina">
+
+
+<h1>
+
+🧠 Quiz de Saúde Emocional
+
+</h1>
+
+
+
+
+<div class="caixa">
+
+
+<p>
+
+Responda as perguntas e veja seus conhecimentos sobre cuidados com a mente.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<form id="quiz">
+
+
+
+
+
+<div class="caixa">
+
+
+<h3>
+
+1) Quando você está triste, uma atitude saudável é:
+
+</h3>
+
+
+<label>
+
+<input type="radio" name="q1" value="1">
+
+Conversar com alguém de confiança
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q1" value="0">
+
+Guardar tudo sozinho
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q1" value="0">
+
+Ignorar seus sentimentos
+
+</label>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h3>
+
+2) Cuidar da saúde emocional significa:
+
+</h3>
+
+
+
+<label>
+
+<input type="radio" name="q2" value="1">
+
+Cuidar dos pensamentos e sentimentos
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q2" value="0">
+
+Nunca demonstrar emoções
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q2" value="0">
+
+Não conversar com ninguém
+
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h3>
+
+3) A ansiedade pode ser:
+
+</h3>
+
+
+<label>
+
+<input type="radio" name="q3" value="1">
+
+Um sentimento que pode acontecer com qualquer pessoa
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q3" value="0">
+
+Algo que deve ser escondido sempre
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q3" value="0">
+
+Uma coisa que não existe
+
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h3>
+
+4) Uma forma de cuidar da mente é:
+
+</h3>
+
+
+
+<label>
+
+<input type="radio" name="q4" value="1">
+
+Fazer atividades que trazem bem-estar
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q4" value="0">
+
+Se afastar de todos
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q4" value="0">
+
+Ignorar problemas
+
+</label>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h3>
+
+5) Quando um amigo está passando por dificuldades:
+
+</h3>
+
+
+<label>
+
+<input type="radio" name="q5" value="1">
+
+Ouvir e apoiar
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q5" value="0">
+
+Fazer brincadeiras com o problema
+
+</label>
+
+
+<br>
+
+
+<label>
+
+<input type="radio" name="q5" value="0">
+
+Ignorar
+
+</label>
+
+
+</div>
+
+
+
+
+
+
+<button type="submit">
+
+Ver resultado
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+<div id="resultado"></div>
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+<p>
+
+Projeto Escolar - Portal de Saúde Emocional © 2026
+
+</p>
+
+</footer>
+
+
+
+
+
+<button id="topo">
+
+⬆
+
+</button>
+
+
+
+
+<script src="js/script.js"></script>
+
+<script src="js/quiz.js"></script>
+
+
+</body>
+
+</html>
+// Quiz de Saúde Emocional
+
+
+const quiz = document.getElementById("quiz");
+
+
+const resultado = document.getElementById("resultado");
+
+
+
+quiz.addEventListener("submit",function(event){
+
+
+event.preventDefault();
+
+
+
+let pontos = 0;
+
+
+
+for(let i = 1; i <= 5; i++){
+
+
+let resposta = document.querySelector(
+`input[name="q${i}"]:checked`
+);
+
+
+
+if(resposta){
+
+pontos += Number(resposta.value);
+
+}
+
+
+}
+
+
+
+
+
+resultado.innerHTML = `
+
+
+<div class="caixa">
+
+
+<h2>
+
+Resultado 💙
+
+</h2>
+
+
+<p>
+
+Você acertou <strong>${pontos}/5</strong> perguntas.
+
+</p>
+
+
+<p>
+
+Continue aprendendo sobre saúde emocional e cuidando de você.
+
+</p>
+
+
+</div>
+
+
+`;
+
+
+
+});
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Referências | Mente em Equilíbrio</title>
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<header>
+
+
+<div class="logo">
+
+
+<i class="fa-solid fa-heart"></i>
+
+
+<h2>Mente em Equilíbrio</h2>
+
+
+</div>
+
+
+
+
+
+<nav>
+
+
+<a href="index.html">Início</a>
+
+<a href="escuta.html">Escuta</a>
+
+<a href="quiz.html">Quiz</a>
+
+<a href="referencias.html">Referências</a>
+
+
+</nav>
+
+
+
+
+
+<div>
+
+
+<button id="aumentar">A+</button>
+
+
+<button id="escuro">🌙</button>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+<main class="pagina">
+
+
+
+<h1>
+
+📚 Referências
+
+</h1>
+
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+Fontes utilizadas na pesquisa:
+
+</h2>
+
+
+
+<p>
+
+As informações deste portal foram baseadas em fontes confiáveis
+sobre saúde emocional e bem-estar.
+
+</p>
+
+
+
+<br>
+
+
+
+
+<ul>
+
+
+<li>
+
+Organização Mundial da Saúde (OMS) -
+Saúde mental e bem-estar.
+
+</li>
+
+
+
+<br>
+
+
+<li>
+
+Ministério da Saúde -
+Informações sobre cuidados com a saúde mental.
+
+</li>
+
+
+
+
+<br>
+
+
+<li>
+
+UNICEF -
+Materiais sobre adolescentes, emoções e proteção.
+
+</li>
+
+
+
+
+<br>
+
+
+<li>
+
+Cartilhas educativas sobre prevenção ao bullying,
+acolhimento e convivência escolar.
+
+</li>
+
+
+
+<br>
+
+
+
+<li>
+
+Artigos científicos sobre emoções, ansiedade,
+estresse e qualidade de vida.
+
+</li>
+
+
+
+</ul>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="caixa">
+
+
+<h2>
+
+Mensagem final 💙
+
+</h2>
+
+
+<p>
+
+Cuidar da saúde emocional é um processo diário.
+
+Buscar ajuda, conversar e demonstrar sentimentos são atitudes importantes
+para uma vida mais saudável.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+Projeto Escolar - Portal de Saúde Emocional © 2026
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+<button id="topo">
+
+⬆
+
+</button>
+
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+
+</html>
